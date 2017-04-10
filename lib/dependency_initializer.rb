@@ -1,6 +1,5 @@
 module DependencyInitializer
   InvalidDependency = Class.new(StandardError)
-  MissingDependency = Class.new(StandardError)
 
   def self.[](*deps_input)
     declared_deps = standardize_deps(deps_input)
